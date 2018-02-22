@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     int mCount  = 0;
     // step counter
     int mStep   = 1;
+    // set Maximum Count
+    int mMax    = 100;
 
     private TextView mTextView;
     private ProgressBar mProgress;
@@ -33,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
         mProgress.setProgress(0);
 
         // Maximum Counter
-        mProgress.setMax(100);
+        mProgress.setMax(mMax);
 
         // Even OnClick
         mProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-            mCount = (mCount < 100) ?  mCount * mStep :  0;
+            mCount = (mCount < mMax) ?  mCount * mStep :  0;
 
             mProgress.setProgress(mCount);
             mTextView.setText(String.valueOf(mCount));
