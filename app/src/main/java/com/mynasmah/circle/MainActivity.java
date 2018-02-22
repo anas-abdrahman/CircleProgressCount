@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-            mCount = (mCount < mMax) ?  mCount * mStep :  0;
+            mCount = (mCount < mMax) ?  mCount + mStep :  0;
 
             mProgress.setProgress(mCount);
             mTextView.setText(String.valueOf(mCount));
