@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar mProgress;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -44,19 +45,28 @@ public class MainActivity extends AppCompatActivity {
 
             mCount = (mCount < mMax) ?  mCount + mStep :  0;
 
-            mProgress.setProgress(mCount);
-            mTextView.setText(String.valueOf(mCount));
+            setCount(mCount);
 
             }
         });
 
     }
 
-    public void btn_reset(View view) {
+    public void reset(View view)
+    {
 
-            mCount = 0;
-            mProgress.setProgress(mCount);
-            mTextView.setText(String.valueOf(mCount));
+        mCount = 0;
+
+        setCount(mCount);
+
+    }
+
+    private void setCount(int count)
+    {
+
+        mProgress.setProgress(count);
+
+        mTextView.setText(String.valueOf(count));
 
     }
 
