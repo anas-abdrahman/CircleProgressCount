@@ -6,4 +6,5 @@
     <color name="colorBg">#212121</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBgCircle">#272b34</color>
+    <color name="colorProgress">#50bfcd</color>
 </resources>
