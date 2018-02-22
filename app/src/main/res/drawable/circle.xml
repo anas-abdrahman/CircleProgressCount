@@ -4,7 +4,7 @@
     <item android:id="@android:id/secondaryProgress">
         <shape android:shape="oval">
 
-            <solid android:color="#272b34"/>
+            <solid android:color="@color/colorBgCircle"/>
 
         </shape>
     </item>
@@ -40,7 +40,7 @@
                     android:pivotY="50%"
                     android:toDegrees="360" />
 
-                <solid android:color="#50bfcd"/>
+                <solid android:color="@color/colorProgress"/>
 
             </shape>
         </rotate>
