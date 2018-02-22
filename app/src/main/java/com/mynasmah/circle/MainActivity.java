@@ -51,4 +51,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    public void btn_reset(View view) {
+
+            mCount = 0;
+            mProgress.setProgress(mCount);
+            mTextView.setText(String.valueOf(mCount));
+
+    }
+
 }
